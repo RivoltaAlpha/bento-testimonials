@@ -3,23 +3,26 @@ body {
     background-color: hsl(0, 0%, 81%);
     font-size: 14px;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 /* Container for the testimonials grid */
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
         "item1 item1 item2 item5"
         "item3 item4 item4 item5";
-    justify-content: center;
-    justify-items: center;
-    gap: 20px;
-    padding: 40px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    gap: 30px;
+    padding: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container .quotationmark {
